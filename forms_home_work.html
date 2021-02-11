@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<h1> align="center">Заполните Анкету</h1>
+
+<body>
+
+   <form action="" name="registration">
+
+       <fieldset>
+           <legend>Личные Данные</legend>
+
+
+           <label for="lastname"></label>
+              <input type="text" name="lastname" id="lastname" autofocus required="required" placeholder="Фамилия"  pattern="^[А-Яа-яЁё\s]+$"   maxlength="25" >
+            <br>
+              <label for="first"></label>
+                <input type="text" name="lastname" id="first" required="required" placeholder="Имя" pattern="^[А-Яа-яЁё\s]+$"  maxlength="20">
+           <br>
+             <label for="middle"></label>
+                 <input type="text" name="lastname" id="middle" required="required"  placeholder="Отчество" pattern="^[А-Яа-яЁё\s]+$" maxlength="24">
+
+       <fieldset>
+           <legend>Паспорт</legend>
+              <label for="serial"></label>
+              <input type="text" name="serial" required id="serial" pattern="[A-Z]" minlength="2" maxlength="2" placeholder="серия" >
+              <label for="passport"></label>
+              <input type="text" name="pass" id="passport" required min="7" max="7"  pattern="[0-9]{7}" placeholder="номер"  >
+
+
+       </fieldset>
+
+           <fieldset>
+              <legend>Дата Рожденмя</legend>
+               <label for="year"></label>
+               <input type="text" name="year" id="year" required minlength="4" maxlength="4" pattern="[0-9]{4} required" placeholder="2000">
+<br>
+
+
+               <label for="month_select"></label>
+               <select name="month" id="month_select">
+
+                   <option value="Янв">Янв</option>
+                   <option value="Фев">Фев</option>
+                   <option value="Мар">Мар</option>
+                   <option value="Апр">Апр</option>
+                   <option value="Май">Май</option>
+                   <option value="Июнь">Июнь</option>
+                   <option value="Июль">Июль</option>
+                   <option value="Август">Август</option>
+                   <option value="Сент">Сент</option>
+                   <option value="Окт">Окт</option>
+                   <option value="Ноя">Ноя</option>
+                   <option value="Дек">Дек</option>
+               </select>
+<br>
+            <label for="number"></label>
+            <input type="text" name="number" id="number" pattern="^[ 0-9]+$" min="1" max="31" step="1">
+           </fieldset>
+
+
+           <select name="nationality" id="nationality">
+           <label for="nationality">Национальность</label>
+               <option value="РБ">РБ</option>
+               <option value="РФ">РФ</option>
+           </select>
+
+
+           <p>Адрес:<br>
+               <label for="textarea"></label>
+               <textarea name="comment" cols="40" rows="3" id="textarea"></textarea></p>
+
+       </fieldset>
+
+       <fieldset><legend>Интересы</legend>
+
+         <fieldset>
+
+             <legend>Хобби</legend>
+
+             <label for="fishing">Рыбалка</label>
+
+                 <input type="text" name="radio" id="fishing"  placeholder="gdf">
+             <br>
+
+             <label for="astro">Астрономия</label>
+               <input type="radio" name="radio" id="astro"><br>
+
+                 <label for="diving">Дайвинг</label>
+                  <input type="radio" name="radio" id="diving"><br>
+
+
+                 <label for="sport">Марки</label>
+                  <input type="radio" name="radio"  id="sport">
+
+         </fieldset>
+             <fieldset><legend>Домашние животные:</legend>
+
+                 <label>Please Select:<br>
+                     <select name="pets" multiple size="12">
+                         <optgroup label="Попугаи">
+                             <option>волнистый</option>
+                             <option>ара</option>
+                             <option>неразлучник</option>
+                         </optgroup>
+
+                         <optgroup label="Рыба">
+                             <option>Караси</option>
+                             <option>Окуни</option>
+                             <option>Осетр</option>
+                         </optgroup>
+
+                             <optgroup label="Птицы">
+                                 <option>Стая Ворон</option>
+                                 <option>Аист</option>
+                                 <option>Архео</option>
+
+                         </optgroup>
+                     </select>
+                 </label>
+             </fieldset>
+
+           <fieldset>
+               <legend>Данные для входа и восстановления пароля</legend>
+
+               <label for="login"></label>
+               <input type="text" name="login" id="login" required="required" placeholder="Логин" pattern="[A-Za-z]" size="20" min="5"><br>
+               <label for="password"></label>
+               <input type="password" name="password" id="password" required="required" placeholder="Пароль" autocomplete="off" size="20" pattern="[A-Za-z]" min="10" maxlength="20" >
+
+          <fieldset>
+            <legend>Координаты:</legend>
+              <label for="email"></label>
+                 <input type="email" id="email" name="email" placeholder="введите адрес почты"><br>
+
+              <label for="url"></label>
+                  <input type="url" name="url" id="url" placeholder="введите адрес сайта">
+
+          </fieldset>
+
+               <fieldset><legend>Цифры</legend>
+                   <label for="numb"></label>
+                   <input type="number" name="numb" id="numb" min="-2.5" max="2.5" step="0.1"><br>
+
+                   <label for="points"></label>
+                   <input type="range" id="points" name="points" min="1" max="10">
+
+               </fieldset>
+
+               <fieldset><legend>Кнопки управления</legend>
+
+
+                   <button type="submit" value="Submit">Отправить </button>
+                   <button type="reset" value="reset">Сбросить</button><br>
+                  <img src="email%20(1).jpg" alt="image">
+
+               </fieldset>
+
+           </fieldset>
+
+
+
+
+
+       </fieldset>
+
+
+
+   </form>
+
+
+
+</body>
+</html>
