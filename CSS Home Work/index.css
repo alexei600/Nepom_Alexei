@@ -1,0 +1,15 @@
+p {
+
+    font-size: 20px;
+}
+
+#main {
+
+font-family: cursive;
+
+}
+
+div > p{
+    text-indent: 1cm;
+}
+
