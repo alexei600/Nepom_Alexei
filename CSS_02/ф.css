@@ -1,0 +1,26 @@
+.first{
+    width: 30%; height: 40%;
+    background-position: 40px 30px;
+    background-attachment: fixed;
+    background-color:green ;
+    background-repeat: repeat;
+
+
+}
+
+.second{
+    width: 50%; height: 50%;
+    background-position: 40px 30px;
+    background-color:green ;
+    background-repeat: repeat;
+
+
+}
+
+
+p{
+   font-family: sans-serif ;
+    font-size: xx-large;
+    color: darkblue;
+
+}
