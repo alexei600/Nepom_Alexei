@@ -1,0 +1,20 @@
+@import "base_homework_02index.css";
+
+body{
+    font-family: Ballet,sans-serif;
+}
+
+p {
+
+    font-size: 20px;
+}
+
+#main {
+
+font-family: Ballet;
+
+}
+
+div > p{
+    text-indent: 1cm;
+}
