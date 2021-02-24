@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Title</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        height: 10000px;
+    }
+.header{
+    height: 50px;
+    background-color: blue;
+}
+.content-wrap{
+    background-color: greenyellow;
+}
+.menu{
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    float: left;
+}
+.banner{
+    background-color: green;
+    float: right ;
+    height: 100px;
+    width: 200px;
+}
+
+.footer{
+    background-color: orangered;
+}
+
+
+@media all and (max-width: 1187px){
+  .header{
+     background-color: red;
+  }
+  .content-wrap{
+      background-color: aqua;
+  }
+    .menu{
+        background-color: blueviolet;
+        float: right;
+    }
+    .banner{
+        background-color: darksalmon;
+    }
+
+}
+    @media all and (max-width: 921px){
+        .header{
+            background-color: red;
+        }
+        .content-wrap{
+            background-color: aqua;
+        }
+        .menu{
+            background-color: blueviolet;
+            float: right;
+        }
+        .banner{
+            background-color: darksalmon;
+        }
+
+    }
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<div class="header">header</div>
+<div class="content-wrap">
+    <div class="menu">menu</div>
+    <div class="banner">banner</div>
+    <div class="content">cont</div>
+    <div style="clear: both"></div>
+
+</div>
+<div class="footer">footer</div>
+
+</body>
+</html>

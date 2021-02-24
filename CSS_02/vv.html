@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style>
+ div{
+     width: 160px;
+
+ }
+tr{
+    padding: 0;
+    list-style: none;
+}
+tr td{
+    display: inline-block;
+
+    padding: 5px 20px;
+
+}
+@media all {
+
+
+    .dropbtn {
+        background-color: lightgray;
+        color:lightslategrey ;
+        padding: 4px 72px;
+        max-width: 5px;
+        border-collapse: collapse;
+        border-radius: 10px;
+
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin:-10px 12px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+
+        padding: 3px 10px;
+        border-radius: 10px ;
+
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        padding: 3px 10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+@media screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+    .dropbtn {
+        background-color: lightgray;
+        color: white;
+        padding: 3px 30px;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    .dropbtn {
+        background-color: lightgray;
+        color: white;
+
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+}
+ button{
+     background-color: lightgray;
+     color:lightslategrey ;
+     padding: 4px 68px;
+     max-width: 5px;
+     border-radius: 10px;
+     margin: 5px 5px ;
+
+
+ }
+td{
+    max-width: 200px;
+}
+
+</style>
+
+
+
+
+
+     <tr>
+
+         <td>
+    <div class="dropdown">
+        <button class="dropbtn">Monday</button>
+        <div class="dropdown-content">
+          <button> <a href="#">Break</a></button><br>
+          <button><a href="#">Lunch</a></button><br>
+          <button> <a href="#">Dinner</a></button>
+
+        </div>
+    </div>
+         </td>
+
+      <td>
+    <div class="dropdown">
+        <button class="dropbtn">Tuesday</button>
+        <div class="dropdown-content">
+            <button> <a href="#">Break</a></button><br>
+            <button><a href="#">Lunch</a></button><br>
+            <button> <a href="#">Dinner</a></button>
+        </div>
+    </div>
+      </td>
+           <td>
+          <div class="dropdown">
+              <button class="dropbtn">Wednsday</button>
+              <div class="dropdown-content">
+                  <button> <a href="#">Break</a></button><br>
+                  <button><a href="#">Lunch</a></button><br>
+                  <button> <a href="#">Dinner</a></button>
+              </div>
+          </div>
+           </td>
+       <td>
+    <div class="dropdown">
+        <button class="dropbtn">Thursday</button>
+        <div class="dropdown-content">
+            <button> <a href="#">Break</a></button><br>
+            <button><a href="#">Lunch</a></button><br>
+            <button> <a href="#">Dinner</a></button>
+        </div>
+    </div>
+       </td>
+         <td>
+             <div class="dropdown">
+                 <button class="dropbtn">Friday</button>
+                 <div class="dropdown-content">
+                     <button> <a href="#">Break</a></button><br>
+                     <button><a href="#">Lunch</a></button><br>
+                     <button> <a href="#">Dinner</a></button>
+                 </div>
+             </div>
+         </td>
+          <td>
+              <div class="dropdown">
+                  <button class="dropbtn">Saturday</button>
+                  <div class="dropdown-content">
+                      <button> <a href="#">Break</a></button><br>
+                      <button><a href="#">Lunch</a></button><br>
+                      <button> <a href="#">Dinner</a></button>
+                  </div>
+              </div>
+
+          </td>
+
+
+     </tr>
+
+
+
+
+</body>
+</html>
