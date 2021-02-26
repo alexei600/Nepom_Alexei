@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork</title>
+</head>
+<body>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    div{
+        border-style: solid;
+        border-radius: 0em 1em 0em 1em;
+        border-width: 1px;
+        border-color: grey;
+        margin: 3px 5px;
+        padding: 4px 4px;
+    }
+
+.link::before{ content: url("pic/extref.png");
+}
+.after::after {
+    content: url("pic/logo-doc.jpg");
+}
+
+.before1::before{content: url("pic/extref.png")}
+
+.pdf::after{content: url("pic/logo-pdf.png")}
+
+.zip::before{content:url("pic/extref.png")}
+
+.aff::after{content:url("pic/logo-zip.gif")}
+
+</style>
+
+
+
+<h1>Форматы файлов.</h1>
+<br>
+<div>
+  .DOC или .doc (от англ. <a href class="link https://ru.wikipedia.org/wiki/Doc" target="_blank">document</a>)— расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.
+       <a href class="after files/document.doc">Документ MS Word</a>
+</div>
+<br>
+
+<div>Portable Document Format <a href class="before1 https://ru.wikipedia.org/wiki/pdf" target="_blank">PDF</a> — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
+    Документ PDF  <a href class="pdf files/document.pdf">Документ PDF</a>  </div>
+<br>
+<div>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href class="zip https://ru.wikipedia.org/wiki/zip" target="_blank">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
+   <br>
+    <a href class =" aff files/document.zip">Архив</a> </div>
+<br>
+<h2><strong>Это список из файлов</strong></h2>
+<br>
+
+    <img src="pic/logo-list.jpg"><a href="files/document.doc">Документ MS Word</a><br>
+    <img src="pic/logo-list.jpg"><a href="files/document.pdf">Документ PDF<img src="pic/logo-pdf.png"></a><br>
+    <img src="pic/logo-list.jpg"><a href="files/document.zip">Архив</a>
+
+
+
+
+</body>
+</html>
